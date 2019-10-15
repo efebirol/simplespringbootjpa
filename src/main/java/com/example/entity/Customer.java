@@ -15,6 +15,13 @@ import javax.persistence.Id;
 public class Customer
 {
 
+  // Konstruktor der gleich die beiden Parameter in die DB schreibt
+  public Customer(String vorname, String nachname)
+  {
+    this.vorname = vorname;
+    this.nachname = nachname;
+  }
+
   // ID - ist die Id und wird über "GeneratedValue" automatisch erstellt
   @Id
   @GeneratedValue(strategy = GenerationType.AUTO)
