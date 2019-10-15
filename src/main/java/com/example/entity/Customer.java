@@ -6,10 +6,16 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 
+/**
+ * JPA zum speichern von Daten in eine (relationalen) Datenbank
+ */
+
+// Entity - zeigt an das es sich um eine JPA Entity für eine Tabelle handelt
 @Entity
 public class Customer
 {
 
+  // ID - ist die Id und wird über "GeneratedValue" automatisch erstellt
   @Id
   @GeneratedValue(strategy = GenerationType.AUTO)
   private Long id;
