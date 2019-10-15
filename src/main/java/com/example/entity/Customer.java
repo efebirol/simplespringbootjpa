@@ -27,6 +27,7 @@ public class Customer
   @GeneratedValue(strategy = GenerationType.AUTO)
   private Long id;
 
+  // gemappt Variablen (und Spalten der Tabelle)
   private String vorname;
 
   private String nachname;
@@ -55,10 +56,15 @@ public class Customer
     this.nachname = nachname;
   }
 
+  // zur Ausgabe der Werte/Properties
   @Override
   public String toString()
   {
-    return String.format("-- Customer.java - toString() - Customer[id=%d]", id);
+    String result = "";
+    result = String.format("-- \nCustomer.java - toString() - Customer[id=%d]", this.id);
+    result = String.format("-- \nCustomer.java - toString() - vorname:" + this.vorname);
+    result = String.format("-- \nCustomer.java - toString() - nachname:" + this.nachname);
+    return result;
   }
 
   public Long getId()

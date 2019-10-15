@@ -8,7 +8,8 @@ import com.example.entity.Customer;
 
 
 /**
- * Info: Erzeugt automatisch eine Query
+ * Info: Erzeugt automatisch eine Query.
+ * - CrudRepository gibt mir Methode um in der DB zu suchen, speichern und zu löschen (hier: innerhalb der Customer-Entity-Klasse)
  */
 
 public interface CustomerRepository extends CrudRepository<Customer, Long>
